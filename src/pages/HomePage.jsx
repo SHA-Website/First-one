@@ -86,9 +86,9 @@ function HomePage() {
 
         {/* ABOUT */}
         <div className="home1-about">
-          <h2>About Our Association</h2>
-          <p>
-            The Science & Humanities Association (SHA) is one of the largest associations of Kongu Engineering College (Autonomous).<br />
+          <h2>Science & Humanities Association</h2>
+          <p style={{ color: "blue", fontSize: "16px" }}>
+            The <b>Science & Humanities Association (SHA)<b> is one of the largest associations of <b>Kongu Engineering College (Autonomous)</b>.<br />
             SHA represents the Department of Science & Humanities, which comprises four distinguished departments: Mathematics, Physics, Chemistry, and English. The association also represents all first-year B.E./B.Tech students, serving as a common platform that brings together young minds from diverse disciplines.<br />
             SHA is presided over by the Dean of Science & Humanities and is organized into six clusters, each headed by a Secretary, Joint Secretary, Treasurer, and Joint Treasurer, along with a team of executive members.<br />Through its initiatives, the association aims to promote academic excellence, leadership, and holistic development beyond the classroom.
           </p>
