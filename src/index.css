@@ -318,11 +318,6 @@ body {
   font-size: 18px;
 }
 
-.home1-about {
-  background: linear-gradient(to bottom, #ffffff, #d1fae5);
-  padding: 40px;
-}
-
 /*  HOME 2
   */
 .home2 {
@@ -1292,4 +1287,36 @@ body {
 
 .home2-top {
   color: #ffffff;
+}
+
+.about-card {
+  background: #f5fffb;
+  padding: 24px 32px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-title {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  color: #0d9488;
+  font-weight: 600;
+}
+
+.closing-line {
+  font-weight: 500;
+  color: #0f766e;
 }
