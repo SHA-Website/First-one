@@ -411,7 +411,16 @@ body {
 /*  HOME 3
   */
 .home3 {
-  background: linear-gradient(to bottom, #1e1b4b, #6d28d9);
+  background: conic-gradient(
+    from 210deg at 50% 35%,
+    #020617,
+    #1e1b4b,
+    #3e1782,
+    #05534a,
+    #68560b,
+    #701010,
+    #260d51,
+    #020617);
   color: #ffffff;
   padding: 20px;
   overflow: hidden;
