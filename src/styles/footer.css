@@ -1,0 +1,734 @@
+/*  
+   FOOTER - CLEANED & POLISHED VERSION
+     */
+
+.app-footer {
+  position: relative;
+  background: linear-gradient(180deg, #051425 0%, #0b1d3a 30%, #08142b 70%, #000000 100%);
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, transparent, rgba(29, 78, 216, 0.5), rgba(56, 189, 248, 0.5), transparent) 1;
+  padding: 60px 20px 20px;
+  margin-top: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home3 > .app-footer {
+  padding-bottom: 25px;
+}
+
+/*  
+   ANIMATED BACKGROUND
+     */
+
+.footer-bg-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse 600px 400px at 15% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 350px at 85% 60%, rgba(56, 189, 248, 0.12) 0%, transparent 55%),
+    radial-gradient(circle 300px at 50% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+  animation: bgPulse 10s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes bgPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) translateY(0);
+  }
+  33% {
+    opacity: 0.8;
+    transform: scale(1.02) translateY(-5px);
+  }
+  66% {
+    opacity: 0.7;
+    transform: scale(1.05) translateY(5px);
+  }
+}
+
+/*  
+   PARTICLES
+     */
+
+.footer-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(135deg, #3b82f6, #f59e0b);
+  border-radius: 50%;
+  animation: floatParticle 8s ease-in-out infinite;
+  box-shadow: 
+    0 0 10px rgba(59, 130, 246, 0.8),
+    0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.particle:nth-child(odd) {
+  width: 3px;
+  height: 3px;
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  box-shadow: 
+    0 0 10px rgba(251, 191, 36, 0.8),
+    0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50vh) scale(1) rotate(180deg);
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-50px) scale(0.5) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/*  
+   CONTAINER
+     */
+
+.footer-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/*  
+   TOP SECTION - INFO & SOCIAL
+     */
+
+.footer-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.footer-info-left {
+  text-align: left;
+  flex: 1;
+}
+
+.association-name {
+  color: #facc15;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.association-name::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #fbbf24, #facc15, #f59e0b);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.college-name {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.3px;
+}
+
+.college-address {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+/*  
+   INSTAGRAM ICON - ROYAL PURPLE CIRCLE
+     */
+
+.footer-social-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-right .social-icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #0a1f52 0%,
+    #1d4ed8 50%,
+    #60a5fa 100%
+  );
+  border: 3px solid rgba(37, 99, 235, 0.5);
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 10px 30px rgba(124, 58, 237, 0.5),
+    0 0 20px rgba(37, 99, 235, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.footer-social-right .social-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.footer-social-right .social-icon:hover::after {
+  transform: translateX(100%);
+}
+
+.footer-social-right .social-icon svg {
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.footer-social-right .social-icon::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg at 50% 50%, 
+    #60a5fa, #1d4ed8, #6b46c1, #3b82f6, #60a5fa);
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.4s ease;
+  animation: rotateGradient 4s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGradient {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer-social-right .social-icon:hover {
+  transform: translateY(-10px) scale(1.1);
+  border-color: rgba(37, 99, 235, 0.8);
+  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 50%, #60a5fa 100%);
+  box-shadow: 
+    0 15px 45px rgba(124, 58, 237, 0.6),
+    0 0 35px rgba(37, 99, 235, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.footer-social-right .social-icon:hover::before {
+  opacity: 0.7;
+}
+
+.footer-social-right .social-icon:hover svg {
+  transform: scale(1.2) rotateY(360deg);
+}
+
+/*  
+   DIVIDER
+     */
+
+.footer-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 130, 246, 0.4) 15%,
+    rgba(37, 99, 235, 0.6) 35%,
+    rgba(56, 189, 248, 0.7) 50%,
+    rgba(37, 99, 235, 0.6) 65%,
+    rgba(59, 130, 246, 0.4) 85%,
+    transparent 100%
+  );
+  margin: 0 0 35px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmerDivider 3s ease-in-out infinite;
+}
+
+@keyframes shimmerDivider {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*  
+   MAIN CONTENT
+     */
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-designed {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/*  
+   TEAM MEMBERS - POLISHED CARDS
+     */
+
+.footer-team-small {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 25px 0;
+  padding: 10px 0;
+}
+
+.team-member-card {
+  position: relative;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.team-member-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 3;
+  position: relative;
+}
+
+/* Subtle glow effect */
+.team-member-card::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.team-member-card:hover::before {
+  opacity: 1;
+}
+
+/* LinkedIn badge */
+.linkedin-corner-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #0077b5, #005582);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+  z-index: 5;
+}
+
+.linkedin-corner-badge svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+.linkedin-corner-badge:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.6);
+  background: linear-gradient(135deg, #0088cc, #0077b5);
+}
+
+.team-member-card:hover .linkedin-corner-badge {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Info card */
+.team-member-info {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px) scale(0.95);
+  width: 85px;
+  background: rgba(59, 130, 246, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.team-member-info h4 {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-member-info .department {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.team-member-info.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.team-member-card:has(.team-member-info.active) .linkedin-corner-badge {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hover effects */
+.team-member-card:hover img {
+  transform: translateY(-10px) scale(1.08);
+  box-shadow: 0 12px 35px rgba(59, 130, 246, 0.5);
+  border-color: rgba(56, 189, 248, 0.7);
+}
+
+.team-member-card:hover .team-member-info {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+/*  
+   COPYRIGHT
+     */
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  margin: 0;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
+
+/*  
+   RESPONSIVE - TABLET
+     */
+
+@media (max-width: 768px) {
+  .app-footer {
+    padding: 50px 20px 20px;
+  }
+  
+  .home3 > .app-footer {
+    padding-bottom: 25px;
+  }
+
+  .footer-top-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+    gap: 25px;
+  }
+
+  .footer-info-left {
+    text-align: center;
+  }
+
+  .association-name {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+  }
+  
+  .association-name::after {
+    height: 1.5px;
+  }
+
+  .college-name {
+    font-size: 15px;
+  }
+
+  .college-address {
+    font-size: 13px;
+  }
+
+  .footer-social-right .social-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .footer-social-right .social-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-designed {
+    font-size: 13px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+
+  .footer-team-small {
+    flex-wrap: wrap;
+    gap: 3rem 2.5rem;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+  }
+
+  .footer-team-formation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Common row styling */
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Bottom row slightly wider */
+.bottom-row {
+  gap: 80px;
+  margin-top: 15px;
+}
+
+
+  .team-member-card img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ffffff;
+  }
+
+  .team-member-card::before {
+    width: 88px;
+    height: 88px;
+  }
+
+  .linkedin-corner-badge {
+    width: 28px;
+    height: 28px;
+    border: 2.5px solid #ffffff;
+  }
+
+  .linkedin-corner-badge svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .team-member-info {
+    top: 72px;
+    width: 78px;
+    padding: 7px 5px;
+  }
+
+  .team-member-info h4 {
+    font-size: 0.6rem;
+  }
+
+  .team-member-info .department {
+    font-size: 0.48rem;
+    padding: 3px 7px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+/*  
+   RESPONSIVE - MOBILE
+     */
+
+@media (max-width: 480px) {
+  .app-footer {
+    padding: 40px 15px 20px;
+  }
+  
+  .home3 > .app-footer {
+    padding-bottom: 25px;
+  }
+
+  .footer-top-section {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .association-name {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+  }
+  
+  .association-name::after {
+    height: 1.5px;
+  }
+
+  .college-name {
+    font-size: 14px;
+  }
+
+  .college-address {
+    font-size: 12px;
+  }
+
+  .footer-social-right .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-social-right .social-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-designed {
+    font-size: 11px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+  }
+
+  .footer-team-small {
+    gap: 3rem 2rem;
+  }
+
+  .team-member-card img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-member-card::before {
+    width: 83px;
+    height: 83px;
+  }
+
+  .linkedin-corner-badge {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #ffffff;
+  }
+
+  .linkedin-corner-badge svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .team-member-info {
+    top: 68px;
+    width: 72px;
+    padding: 6px 5px;
+  }
+
+  .team-member-info h4 {
+    font-size: 0.58rem;
+  }
+
+  .team-member-info .department {
+    font-size: 0.45rem;
+    padding: 2px 6px;
+  }
+
+  .footer-copyright {
+    font-size: 11px;
+  }
+}
+
+
+
