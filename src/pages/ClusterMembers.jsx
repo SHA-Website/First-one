@@ -4,11 +4,6 @@ import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import { MEMBERS, getMemberImageByRollNo } from "../data/members";
 
-/**
- * HIGH-LEVEL ASSET RESOLVER
- * This scans the assets folder for all images regardless of extension.
- * 'eager: true' ensures they are available immediately on render.
- */
 const ASSET_MAP = import.meta.glob("../assets/**/*.{png,jpg,jpeg,svg,webp}", { eager: true });
 
 const getDynamicImage = (folder, fileName) => {
